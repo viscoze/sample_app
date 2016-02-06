@@ -1,2 +1,12 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, 'Help') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample App | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <input type="text" required>
+    <input type="button" name="check" value="the button!">
+  </body>
+</html>
